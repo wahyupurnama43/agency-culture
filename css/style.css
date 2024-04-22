@@ -2,7 +2,8 @@
 @font-face {
   font-family: "Museo Sans";
   src: url("../fonts/MuseoSans-300.eot");
-  src: url("../fonts/MuseoSans-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans-300.woff2") format("woff2"), url("../fonts/MuseoSans-300.woff") format("woff"), url("../fonts/MuseoSans-300.ttf") format("truetype");
+  src: url("../fonts/MuseoSans-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans-300.woff2") format("woff2"),
+    url("../fonts/MuseoSans-300.woff") format("woff"), url("../fonts/MuseoSans-300.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +11,8 @@
 @font-face {
   font-family: "Museo Sans";
   src: url("../fonts/MuseoSans-700.eot");
-  src: url("../fonts/MuseoSans-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans-700.woff2") format("woff2"), url("../fonts/MuseoSans-700.woff") format("woff"), url("../fonts/MuseoSans-700.ttf") format("truetype");
+  src: url("../fonts/MuseoSans-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans-700.woff2") format("woff2"),
+    url("../fonts/MuseoSans-700.woff") format("woff"), url("../fonts/MuseoSans-700.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -18,7 +20,8 @@
 @font-face {
   font-family: "Museo Sans";
   src: url("../fonts/MuseoSans-900.eot");
-  src: url("../fonts/MuseoSans-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans-900.woff2") format("woff2"), url("../fonts/MuseoSans-900.woff") format("woff"), url("../fonts/MuseoSans-900.ttf") format("truetype");
+  src: url("../fonts/MuseoSans-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans-900.woff2") format("woff2"),
+    url("../fonts/MuseoSans-900.woff") format("woff"), url("../fonts/MuseoSans-900.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -30,7 +33,7 @@
 
 body {
   margin: 0;
-  padding-left: 150px;
+  padding-left: 50px;
   padding-right: 50px;
   font-family: "Museo Sans";
   font-size: 17px;
@@ -74,7 +77,7 @@ p {
 }
 
 /* FORM ELEMENTS */
-input[type=text] {
+input[type="text"] {
   width: 100%;
   height: 54px;
   border: 1px solid #eee;
@@ -88,7 +91,7 @@ textarea {
   padding: 15px 20px;
 }
 
-button[type=submit] {
+button[type="submit"] {
   height: 58px;
   display: -ms-flexbox;
   display: flex;
@@ -102,14 +105,14 @@ button[type=submit] {
   margin: 0;
   padding: 0;
 }
-button[type=submit] * {
+button[type="submit"] * {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-button[type=submit] strong {
+button[type="submit"] strong {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -123,10 +126,10 @@ button[type=submit] strong {
   background: #282828;
   color: #fff;
 }
-button[type=submit] strong:hover {
+button[type="submit"] strong:hover {
   text-decoration: none;
 }
-button[type=submit] b {
+button[type="submit"] b {
   width: 20px;
   height: 1px;
   background: #fff;
@@ -134,7 +137,7 @@ button[type=submit] b {
   margin-left: 20px;
   margin-top: 8px;
 }
-button[type=submit] i {
+button[type="submit"] i {
   width: 0;
   height: 0;
   display: inline-block;
@@ -146,11 +149,11 @@ button[type=submit] i {
   opacity: 1;
   margin-top: 5px;
 }
-button[type=submit]:hover b {
+button[type="submit"]:hover b {
   width: 50px;
   margin-left: 20px;
 }
-button[type=submit]:hover i {
+button[type="submit"]:hover i {
   opacity: 0;
 }
 
@@ -941,7 +944,7 @@ body .slider {
   margin-top: 50px;
 }
 .header .headlines h1 {
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: 800;
   line-height: 1;
   margin: 0;
@@ -1595,7 +1598,7 @@ body .slider {
   padding: 150px 0;
   color: #fff;
 }
-.featured-services .col-lg-3:nth-child(2n+2) {
+.featured-services .col-lg-3:nth-child(2n + 2) {
   margin-top: 134px;
 }
 .featured-services figure {
@@ -1652,6 +1655,12 @@ body .slider {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  color: #fff;
+  padding-top: 3rem;
+}
+
+.recent-news a {
+  color: #fff !important;
 }
 .recent-news .row {
   margin-left: -25px;
@@ -1700,12 +1709,12 @@ body .slider {
   bottom: -1px;
   height: 1px;
   width: 0;
-  background: #282828;
+  background: #fff;
   transition: width 0.25s ease;
 }
-.recent-news .content-box:hover:before {
+.recent-news .content-box:before {
   width: 100%;
-  background: #282828;
+  background: #fff;
   transition: width 0.25s ease;
 }
 .recent-news .content-box:hover:after {
@@ -2167,10 +2176,10 @@ body .slider {
 .blog .sidebar .widget form {
   display: block;
 }
-.blog .sidebar .widget form input[type=text] {
+.blog .sidebar .widget form input[type="text"] {
   margin-bottom: 10px;
 }
-.blog .sidebar .widget form button[type=submit] {
+.blog .sidebar .widget form button[type="submit"] {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -2427,7 +2436,7 @@ body .slider {
   top: -20px;
   font-weight: 600;
 }
-.contact .contact-form #contact .form-group input[type=text] {
+.contact .contact-form #contact .form-group input[type="text"] {
   background: none;
   position: relative;
   z-index: 2;
@@ -2456,7 +2465,8 @@ body .slider {
   font-weight: 600;
   font-size: 13px;
 }
-.contact .contact-form #success, .contact .contact-form #error {
+.contact .contact-form #success,
+.contact .contact-form #error {
   display: none;
   float: left;
 }
@@ -2677,7 +2687,7 @@ body .slider {
     width: 33.33333%;
   }
 
-  .logos ul li:nth-child(n+10) {
+  .logos ul li:nth-child(n + 10) {
     display: none;
   }
 
@@ -2714,7 +2724,7 @@ body .slider {
     font-size: 6vw;
   }
 
-  input[type=text] {
+  input[type="text"] {
     border-radius: 0 !important;
     -webkit-appearance: none;
   }
